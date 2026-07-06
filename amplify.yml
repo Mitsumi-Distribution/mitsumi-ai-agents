@@ -1,0 +1,20 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd frontend
+        - npm install -g pnpm
+        - echo "VITE_API_BASE=$VITE_API_BASE"
+        - echo "VITE_WS_BASE=$VITE_WS_BASE"
+        - echo "VITE_DEV_AUTO_LOGIN=$VITE_DEV_AUTO_LOGIN"
+        - echo "VITE_DEV_AUTO_LOGIN_EMAIL=$VITE_DEV_AUTO_LOGIN_EMAIL"
+        - echo "VITE_DEV_AUTO_LOGIN_PASSWORD=$VITE_DEV_AUTO_LOGIN_PASSWORD"
+        - pnpm install --frozen-lockfile --ignore-scripts=false
+    build:
+      commands:
+        - pnpm run build
+  artifacts:
+    baseDirectory: frontend/dist
+    files:
+      - '**/*'
