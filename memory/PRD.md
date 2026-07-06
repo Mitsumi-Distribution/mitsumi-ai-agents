@@ -16,5 +16,5 @@ FastAPI + MongoDB + Redis + arq | React 19 + Vite 6 + Tailwind 4 | AWS Bedrock C
 - **25 tools total** across all agents
 
 ## Key credentials
-- Super admin: francis@mitsumidistribution.com / Francis@2026
+- Super admin: francis@mitsumidistribution.com / <set via SUPERADMIN_PASSWORD in .env>
 - AWS Bedrock eu-west-3, Resend, Tavily, Google API configured

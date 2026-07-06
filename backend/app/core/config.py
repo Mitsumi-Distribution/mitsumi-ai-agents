@@ -28,7 +28,7 @@ class Settings(BaseSettings):
     EMBEDDING_MODEL: str = "text-embedding-3-small"
     TAVILY_API_KEY: str = ""
 
-    JWT_SECRET: str = "change-me"
+    JWT_SECRET: str = ""
     JWT_ALGORITHM: str = "HS256"
     JWT_EXPIRE_MINUTES: int = 60
     AUTH_ALLOWED_DOMAIN: str = "mitsumidistribution.com"
@@ -47,7 +47,7 @@ class Settings(BaseSettings):
     DEV_AUTH_BYPASS_OTP: bool = True
     SUPERADMIN_EMAIL: str = "francis@mitsumidistribution.com"
     SUPERADMIN_NAME: str = "Francis Mitsumi"
-    SUPERADMIN_PASSWORD: str = "Francis@2026"
+    SUPERADMIN_PASSWORD: str = ""
 
     RESEND_API_KEY: str = ""
     EMAIL_FROM_NAME: str = "Mitsumi AI Platform"

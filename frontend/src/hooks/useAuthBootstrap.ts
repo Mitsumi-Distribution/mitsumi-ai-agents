@@ -5,7 +5,7 @@ import { hasManualSignOut, useSessionStore } from "../store/session";
 const DEV_AUTO_LOGIN_ENABLED =
   (import.meta.env.VITE_DEV_AUTO_LOGIN ?? "true").toString().toLowerCase() !== "false";
 const DEV_EMAIL = import.meta.env.VITE_DEV_AUTO_LOGIN_EMAIL ?? "francis@mitsumidistribution.com";
-const DEV_PASSWORD = import.meta.env.VITE_DEV_AUTO_LOGIN_PASSWORD ?? "Francis@2026";
+const DEV_PASSWORD = import.meta.env.VITE_DEV_AUTO_LOGIN_PASSWORD ?? "";
 
 export type AuthBootstrapStatus = "idle" | "loading" | "ready" | "error";
 

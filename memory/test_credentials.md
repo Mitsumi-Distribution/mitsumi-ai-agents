@@ -2,7 +2,7 @@
 
 ## Super admin
 - Email: francis@mitsumidistribution.com
-- Password: Francis@2026
+- Password: <set via SUPERADMIN_PASSWORD in .env>
 - Login: POST /api/auth/login/direct
 
 ## Preview URL
@@ -12,7 +12,7 @@ https://mitsumi-agent-test.preview.emergentagent.com
 Default: Claude Haiku 4.5 | Sonnet 4.6 | Opus 4.7
 
 ## Google OAuth
-- Client ID: 1053642128976-or6i839nkmqhc4h1fogn9vn0f2lj9nuo.apps.googleusercontent.com
+- Client ID: <set via GOOGLE_OAUTH_CLIENT_ID in .env>
 - Redirect URI: https://mitsumi-agent-test.preview.emergentagent.com/api/google/callback
 - Scopes: Calendar, Calendar.Events, Gmail.Send, Gmail.Read, Gmail.Modify, UserInfo.Email
 - Status: POST /api/google/status
